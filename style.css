@@ -1,0 +1,166 @@
+
+/* Define Levenim MT Regular */
+@font-face {
+    font-family: 'Century Gothic Paneuropean thin'; /* This is the name you'll use in your CSS */
+    src: url('../fonts/CenturyGothicPaneuropean-Variable.woff2') format('woff2'); /* Path to your font file */
+    /* Variable fonts define a range for font-weight.
+       Century Gothic Paneuropean Variable typically spans from very thin to very heavy. */
+    font-weight: 1 999; /* Defines the available weight range (from 1 to 999) */
+    font-display: swap; /* Recommended for better user experience (prevents invisible text) */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: hsl(200deg 1.3% 54.71%);
+   font-family: 'Century Gothic Paneuropean thin', sans-serif;
+
+}
+header{
+    text-align: center;
+    padding: 50px;
+}
+h1{
+    margin-top: 30px;
+    font-size: 83px;
+    font-weight: 100;
+}
+h2{
+    font-size: 36px;
+}
+main{
+    padding: 20px 150px;
+}
+
+.content:nth-child(1){
+      /* clip-path: ellipse(85% 100% at top) */
+      /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+       */
+       /* border-: 15px 50px 1000px; */
+      /* clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+       */
+       /* border-bottom-left-radius: 50px; */
+       /* border-rad: 50px; */
+       /* clip-path: polygon(50% 0%, 100% 0, 100% 22%, 24% 20%, 24% 100%, 0 100%, 0% 35%, 0 0); */
+
+     /* shape-rendering: polygon(50% 0%, 100% 0, 100% 22%, 24% 20%, 24% 100%, 0 100%, 0% 35%, 0 0); */
+
+      /* clip-path: Path(M 200px,10px L 190px,20px L 50px,20px L 45px,25px L 45px,190px L 40px,200px L 5px,200px L 0px,190px L 0px.0px L 200px,10px Z );  */
+
+  /* clip-path: path('M1228 0 A 10,10 0,0,1 1228 10 L400 20 L45 25 L45 190 L40 200 L5 200 L0 190 L0 0 L200 10 Z'); */
+ /* clip-path: path('M0 0 H250 A50 50 0 0 1 300 50 V300 H0 Z'); */
+}
+/* .upper{
+  box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.3);
+  background: #fff; /* or your background */
+  .content{
+    margin-bottom: 30px;
+  }
+.upper{
+    background-color: rgb(0, 91, 140);
+    width: 100%;
+    height: 40px;
+    border-bottom-right-radius: 20px;
+}
+.raper{
+    background-color: rgb(0, 91, 140);
+    width: 31%;
+    height: 54px;
+    border-bottom-right-radius: 20px;
+}
+.lower{
+    display: flex;
+}
+.lower-left{
+    background-color: rgb(0, 91, 140);
+    padding: 10px 30px 10px 30px;
+    width: 30%;
+    border-top-right-radius: 10px;
+    text-align: center;
+    color: #fff;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+/* .gap{
+    gap: 10px;
+} */
+h3{
+    font-size: 80px;
+    font-weight: 100;
+}
+h3 span{
+    font-size: 20px;
+}
+
+.step{
+    font-size: 20px;
+}
+.lower-right{
+    padding: 40px 30px;
+        padding: 20px 81px 0px 84px;
+    display: flex;
+}
+.para{
+    max-width: 415px;
+}
+.para p{
+   text-indent: 15px;
+    color: hsl(0deg 0% 76.86%);
+}
+.step p{
+    margin-left: 20px;
+
+}
+.icon{
+    display:flex;
+    justify-content: center;
+    padding:10px 0px 0px 63px;
+}
+i{
+    font-size: 35px;
+    color:hsl(0deg 0% 73.73%)
+}
+@media screen  and (max-width:1200px){
+    .raper{
+        display: none;
+    }
+    main{
+        padding: 20px 10px;
+    }
+}
+@media screen and  (max-width:850px){
+    .lower-right{
+            padding: 12px 53px 0px 31px;
+    }
+    h1{
+        font-size: 36px;
+    }
+    h2{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:650px) {
+    h3{
+        font-size: 25px;
+    }
+    .step p{
+        font-size: 14px;
+        margin-left: 5px;
+
+    }
+    .para p{
+        font-size: 10px;
+    }
+    .icon{
+        padding-left: 10px;
+    }
+    .lower-left{
+        padding: 0px;
+    }
+    
+}
