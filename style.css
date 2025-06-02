@@ -71,26 +71,67 @@ main{
     border-bottom-right-radius: 20px;
     z-index: 1;
     order: 1;
-}
-.rapper{
-    box-shadow: inset 1px 16px 94px 0px rgba(0, 0, 0, 0.5);
-    /* height: 10px; */
-    /* background-color: red; */
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
-    height: 14px;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-    backdrop-filter: blur(10px);
-        border-radius: 50%;
     position: relative;
-    top: 12px;
+      /* box-shadow: 
+    inset -5px 5px 10px -7px rgba(0, 0, 0, 0.3),
+inset -10px 8px 15px -8px rgba(0, 0, 0, 0.25),
+ inset 0px 10px 20px -10px rgba(0, 0, 0, 0.35),
+    inset 5px 5px 10px -7px rgba(0, 0, 0, 0.3),
+    inset 10px 8px 15px -8px rgba(0, 0, 0, 0.25); */
+}
+ /* .rapper{
+   position: absolute;
+  top: -10px;
+  left: 10px;
+  right: 10px;
+  height: 20px;
+  background: transparent;
+  border-radius: 50% / 100%;
+  box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.15); /* curved shadow effect 
+  z-index: 0;
+
+} */
+
+.rapper::before {
+    content: "";
+    position: absolute;
+    /* background: linear-gradient(to right, #222 50%, #ccc); */
+    width: 60%
+;
+    height: 0%;
+    transform: skewy(0.5deg);
+    transform-origin: right;
+    top: 8px;
+    left: 6px;
+    border-radius: 10px;
+    opacity: 0.7;
+    z-index: 0;
+    box-shadow: black 0px 5px 10px 7px;
+    background: transparent;
+    z-index: 100;
+}
+ .rapper::after {
+    content: "";
+    position: absolute;
+    /* background: linear-gradient(to right, #222 50%, #ccc); */
+    width: 60%;
+    height: 0%;
+    transform: skewy(-0.5deg);
+    transform-origin: left;
+    top: 4px;
+    right: 6px;
+    border-radius: 10px;
+    opacity: 2.4;
+    z-index: 100;
+    box-shadow: black 0px 7px 10px 4px;
 }
 .raper{
     background-color: rgb(0, 91, 140);
     width: 31%;
     height: 54px;
     border-bottom-right-radius: 20px;
+  
+
 }
 .lower{
     display: flex;
