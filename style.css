@@ -84,9 +84,9 @@ inset -10px 8px 15px -8px rgba(0, 0, 0, 0.25),
     top: 34px;
     /* right: 80px; */
     height: 38px;
-    background: #3a3535;
+    background: #656565;
     border-radius: 50%;
-        box-shadow: 0 11px 20px 3px rgb(12 11 11 / 69%);
+        box-shadow: 0 17px 16px -7px rgb(12 11 11 / 69%);
     z-index: 10;
     width: 100%;
 }
@@ -104,7 +104,7 @@ inset -10px 8px 15px -8px rgba(0, 0, 0, 0.25),
     width: 50px;
     height: 0px;
     /* background-color: #cac6c6; */
-    box-shadow: -2px -1px 3px 1px;
+    box-shadow: 2px 0px 7px 1px;
     border-radius: 2px 0px 7px 1px;
     border-bottom-right-radius: 100px;
 }
